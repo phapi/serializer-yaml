@@ -1,0 +1,40 @@
+{
+  "name": "phapi/serializer-yaml",
+  "description": "Serializer package containing middleware for YAML serialization and deserialization",
+  "keywords": [
+    "middleware", "serializer", "yaml", "phapi"
+  ],
+  "version": "1.0.0",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "homepage": "http://phapi.github.io",
+  "authors": [
+    {
+      "name": "Peter Ahinko",
+      "email": "peter@ahinko.se",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=5.6.0",
+    "phapi/serializer": "1.*",
+    "symfony/yaml": "2.7.*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "4.*",
+    "mockery/mockery": "0.9.*",
+    "codeclimate/php-test-reporter": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "Phapi\\Middleware\\Deserializer\\Yaml\\": "src/Phapi/Middleware/Deserializer/Yaml/",
+      "Phapi\\Middleware\\Serializer\\Yaml\\": "src/Phapi/Middleware/Serializer/Yaml/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Phapi\\Tests\\Middleware\\Deserializer\\Yaml\\": "tests/Phapi/Middleware/Deserializer/Yaml/",
+      "Phapi\\Tests\\Middleware\\Serializer\\Yaml\\": "tests/Phapi/Middleware/Serializer/Yaml/"
+    }
+  }
+}
