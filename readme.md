@@ -1,4 +1,9 @@
 # YAML Serializer
+
+[![Build status](https://img.shields.io/travis/phapi/serializer-yaml.svg?style=flat-square)](https://travis-ci.org/phapi/serializer-yaml)
+[![Code Climate](https://img.shields.io/codeclimate/github/phapi/serializer-yaml.svg?style=flat-square)](https://codeclimate.com/github/phapi/serializer-yaml)
+[![Test Coverage](https://img.shields.io/codeclimate/coverage/github/phapi/serializer-yaml.svg?style=flat-square)](https://codeclimate.com/github/phapi/serializer-yaml/coverage)
+
 The YAML Serializer package contains two middleware, one for serialization and one for deserialization. The two works the same the only difference is that the serializer takes an array and returns YAML and the deserializer does the opposite.
 
 The serializer reacts if the <code>Accept</code> header matches one of the supported mime types and the deserializer reacts if the <code>Content-Type</code> matches the list of supported mime types.
